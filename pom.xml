@@ -12,9 +12,9 @@
     <description>Collection of useful classes I use in my plugins</description>
 
     <scm>
-        <connection>scm:git:git://github.com/desht/dhutils.git</connection>
-        <developerConnection>scm:git:git@github.com:desht/desht.git</developerConnection>
-        <url>https://github.com/desht/dhutils</url>
+        <connection>scm:git:git://github.com/rjenkinsjr/dhutils.git</connection>
+        <developerConnection>scm:git:git@github.com:rjenkinsjr/desht.git</developerConnection>
+        <url>https://github.com/rjenkinsjr/dhutils</url>
     </scm>
 
     <licenses>
@@ -41,23 +41,9 @@
 
     <modules>
         <module>API</module>
-        <module>PreRefactor</module>
-        <module>v1_4_5</module>
-        <module>v1_4_6</module>
-        <module>v1_4_R1</module>
-        <module>v1_5_R1</module>
-        <module>v1_5_R2</module>
-        <module>v1_5_R3</module>
-        <module>v1_6_R1</module>
-        <module>v1_6_R2</module>
-        <module>v1_6_R3</module>
-        <module>v1_7_R1</module>
-        <module>v1_7_R2</module>
-        <module>v1_7_R3</module>
-        <module>v1_7_R4</module>
         <module>v1_8_R1</module>
-	<module>v1_8_R2</module>
-	<module>v1_8_R3</module>
+        <module>v1_8_R2</module>
+        <module>v1_8_R3</module>
         <module>Fallback</module>
         <module>Lib</module>
     </modules>
@@ -67,23 +53,6 @@
         <repository>
             <id>bukkit-repo</id>
             <url>http://repo.bukkit.org/content/groups/public</url>
-        </repository>
-        <repository>
-            <id>addstar-repo</id>
-            <url>http://maven.addstar.com.au/artifactory/ext-release-local</url>
-            <snapshots>
-      	         <enabled>false</enabled>
-            </snapshots>
-        </repository>
-        <repository>
-            <id>addstar-snapshot-repo</id>
-            <url>http://maven.addstar.com.au/artifactory/ext-snapshot-local</url>
-            <snapshots>
-      	        <enabled>true</enabled>
-            </snapshots>
-            <releases>
-                <enabled>false</enabled>
-            </releases>
         </repository>
     </repositories>
 
