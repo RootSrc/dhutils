@@ -2,21 +2,21 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <artifactId>dhutils-fallback</artifactId>
+  <version>3.0.0-alpha1-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>DH Utils NMS Fallback</name>
-  <version>fallback</version>
 
   <parent>
     <groupId>me.desht</groupId>
     <artifactId>dhutils-parent</artifactId>
-    <version>parent</version>
+    <version>3.0.0-alpha1-SNAPSHOT</version>
   </parent>
 
   <dependencies>
     <dependency>
       <groupId>me.desht</groupId>
       <artifactId>dhutils-api</artifactId>
-      <version>API</version>
+      <version>3.0.0-alpha1-SNAPSHOT</version>
       <type>jar</type>
     </dependency>
   </dependencies>

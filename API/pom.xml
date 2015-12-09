@@ -2,14 +2,14 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <artifactId>dhutils-api</artifactId>
+  <version>3.0.0-alpha1-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>DH Utils NMS Abstraction API</name>
-  <version>API</version>
 
   <parent>
     <groupId>me.desht</groupId>
     <artifactId>dhutils-parent</artifactId>
-    <version>parent</version>
+    <version>3.0.0-alpha1-SNAPSHOT</version>
   </parent>
 
   <dependencies>

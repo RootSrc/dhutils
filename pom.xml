@@ -4,7 +4,7 @@
     <groupId>me.desht</groupId>
     <artifactId>dhutils-parent</artifactId>
     <packaging>pom</packaging>
-    <version>parent</version>
+    <version>3.0.0-alpha1-SNAPSHOT</version>
     <name>DH Utils</name>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -16,7 +16,7 @@
 
     <scm>
         <connection>scm:git:git://github.com/rjenkinsjr/dhutils.git</connection>
-        <developerConnection>scm:git:git@github.com:rjenkinsjr/desht.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:rjenkinsjr/dhutils.git</developerConnection>
         <url>https://github.com/rjenkinsjr/dhutils</url>
     </scm>
 
@@ -67,6 +67,16 @@
                 <configuration>
                     <source>1.6</source>
                     <target>1.6</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>com.github.danielflower.mavenplugins</groupId>
+                <artifactId>multi-module-maven-release-plugin</artifactId>
+                <version>1.4.2</version>
+                <configuration>
+                    <releaseGoals>
+                        <releaseGoal>install</releaseGoal>
+                    </releaseGoals>
                 </configuration>
             </plugin>
         </plugins>
