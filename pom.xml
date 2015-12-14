@@ -73,11 +73,12 @@
             <plugin>
                 <groupId>com.github.danielflower.mavenplugins</groupId>
                 <artifactId>multi-module-maven-release-plugin</artifactId>
-                <version>1.4.2</version>
+                <version>1.5-SNAPSHOT</version>
                 <configuration>
                     <releaseGoals>
                         <releaseGoal>install</releaseGoal>
                     </releaseGoals>
+                    <allowSnapshotDependencies>true</allowSnapshotDependencies>
                 </configuration>
             </plugin>
         </plugins>
