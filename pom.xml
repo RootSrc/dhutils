@@ -76,6 +76,7 @@
                 <version>1.5-SNAPSHOT</version>
                 <configuration>
                     <releaseGoals>
+                        <releaseGoal>clean</releaseGoal>
                         <releaseGoal>install</releaseGoal>
                     </releaseGoals>
                     <allowSnapshotDependencies>true</allowSnapshotDependencies>
