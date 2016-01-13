@@ -4,7 +4,7 @@
   <artifactId>dhutils-v1_8_R2</artifactId>
   <version>3.0.0-alpha-SNAPSHOT</version>
   <packaging>jar</packaging>
-  <name>DH Utils NMS v1.8.3-R0.1</name>
+  <name>DH Utils NMS v1.8-R2</name>
 
   <parent>
     <groupId>me.desht</groupId>
