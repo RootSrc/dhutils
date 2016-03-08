@@ -62,10 +62,10 @@ public class NoteBlockReceiver implements Receiver
 		float volume = VOLUME_RANGE * ((float) message.getData2() / 127.0f);
 
 		if (globalLoc != null) {
-			globalLoc.getWorld().playSound(globalLoc, Sound.NOTE_PIANO, volume, pitch);
+			globalLoc.getWorld().playSound(globalLoc, Sound.BLOCK_NOTE_HARP, volume, pitch);
 		} else if (listeners != null) {
 			for (Player player : listeners)
-				player.playSound(player.getLocation(), Sound.NOTE_PIANO, volume, pitch);
+				player.playSound(player.getLocation(), Sound.BLOCK_NOTE_HARP, volume, pitch);
 		}
 	}
 

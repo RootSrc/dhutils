@@ -1,10 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <artifactId>dhutils-nms-api</artifactId>
+  <artifactId>dhutils-nms-v1_9_R1</artifactId>
   <version>3.0.0-alpha.1-SNAPSHOT</version>
   <packaging>jar</packaging>
-  <name>DH Utils NMS Abstraction API</name>
+  <name>DH Utils NMS v1.9-R1</name>
 
   <parent>
     <groupId>me.desht</groupId>
@@ -15,10 +15,16 @@
   <dependencies>
     <dependency>
       <groupId>org.bukkit</groupId>
-      <artifactId>bukkit</artifactId>
+      <artifactId>craftbukkit</artifactId>
       <version>1.9-R0.1-SNAPSHOT</version>
       <type>jar</type>
     </dependency>
+    <dependency>
+      <groupId>me.desht</groupId>
+      <artifactId>dhutils-nms-api</artifactId>
+      <version>3.0.0-alpha.1-SNAPSHOT</version>
+      <type>jar</type>
+    </dependency>
   </dependencies>
-
 </project>
+
