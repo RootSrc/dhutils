@@ -4,13 +4,12 @@
     <groupId>me.desht</groupId>
     <artifactId>dhutils-parent</artifactId>
     <packaging>pom</packaging>
-    <version>3.0.0-alpha-SNAPSHOT</version>
-    <name>DH Utils</name>
+    <version>3.0.0-alpha.1-SNAPSHOT</version>
+    <name>DH Utils Parent</name>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <version.plugin.javadoc>2.10.3</version.plugin.javadoc>
         <version.plugin.compiler>3.3</version.plugin.compiler>
-        <target.bukkit.api>1.8.8-R0.1-SNAPSHOT</target.bukkit.api>
     </properties>
     <description>Collection of useful classes I use in my plugins</description>
 
