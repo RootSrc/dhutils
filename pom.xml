@@ -106,6 +106,41 @@
                 </plugins>
             </build>
         </profile>
+        <!-- Things to do only for releases. -->
+        <profile>
+            <id>release</id>
+            <activation>
+                <property>
+                    <name>rtr.release</name>
+                    <value>true</value>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <!-- Write POM version to properties file. -->
+                    <plugin>
+                        <artifactId>maven-antrun-plugin</artifactId>
+                        <version>1.8</version>
+                        <executions>
+                            <execution>
+                                <id>write-properties-file</id>
+                                <phase>initialize</phase>
+                                <goals>
+                                    <goal>run</goal>
+                                </goals>
+                                <configuration>
+                                    <target>
+                                        <propertyfile file="${project.basedir}/version.properties">
+                                            <entry key="RELEASE_POM_VERSION" value="${project.version}" />
+                                        </propertyfile>
+                                    </target>
+                                </configuration>
+                            </execution>
+                        </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
     </profiles>
 </project>
 
