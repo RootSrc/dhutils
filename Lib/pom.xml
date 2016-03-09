@@ -160,4 +160,24 @@
              </plugin>
         </plugins>
     </build>
+
+    <profiles>
+        <!-- SonarQube analysis profile. -->
+        <profile>
+            <id>sonarqube</id>
+            <activation>
+                <property>
+                    <name>sonar.host.url</name>
+                </property>
+            </activation>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.sonarsource.scanner.maven</groupId>
+                        <artifactId>sonar-maven-plugin</artifactId>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+    </profiles>
 </project>
