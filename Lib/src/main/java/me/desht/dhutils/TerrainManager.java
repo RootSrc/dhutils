@@ -10,7 +10,6 @@ import org.bukkit.entity.Player;
 import com.sk89q.worldedit.CuboidClipboard;
 import com.sk89q.worldedit.EditSession;
 import com.sk89q.worldedit.EmptyClipboardException;
-import com.sk89q.worldedit.FilenameException;
 import com.sk89q.worldedit.LocalPlayer;
 import com.sk89q.worldedit.LocalSession;
 import com.sk89q.worldedit.MaxChangedBlocksException;
@@ -19,7 +18,13 @@ import com.sk89q.worldedit.WorldEdit;
 import com.sk89q.worldedit.bukkit.BukkitWorld;
 import com.sk89q.worldedit.bukkit.WorldEditPlugin;
 import com.sk89q.worldedit.data.DataException;
+import com.sk89q.worldedit.extent.clipboard.BlockArrayClipboard;
+import com.sk89q.worldedit.regions.CuboidRegion;
+import com.sk89q.worldedit.regions.Region;
 import com.sk89q.worldedit.schematic.SchematicFormat;
+import com.sk89q.worldedit.session.ClipboardHolder;
+import com.sk89q.worldedit.util.io.file.FilenameException;
+import com.sk89q.worldedit.world.registry.LegacyWorldData;
 
 /**
  * @author desht
@@ -104,8 +109,12 @@ public class TerrainManager {
 		                              EXTENSION, new String[] { EXTENSION });
 
 		editSession.enableQueue();
-		localSession.setClipboard(SchematicFormat.MCEDIT.load(saveFile));
-		localSession.getClipboard().place(editSession, getPastePosition(loc), false);
+		CuboidClipboard cc = SchematicFormat.MCEDIT.load(saveFile);
+		Region region = new CuboidRegion(cc.getOrigin(), cc.getOrigin().add(cc.getSize()));
+		BlockArrayClipboard bac = new BlockArrayClipboard(region);
+		bac.setOrigin(cc.getOrigin());
+		localSession.setClipboard(new ClipboardHolder(bac, LegacyWorldData.getInstance()));
+		cc.place(editSession, getPastePosition(loc), false);
 		editSession.flushQueue();
 		we.flushBlockBag(localPlayer, editSession);
 	}
@@ -126,7 +135,7 @@ public class TerrainManager {
 
 	private Vector getPastePosition(Location loc) throws EmptyClipboardException {
 		if (loc == null) 
-			return localSession.getClipboard().getOrigin();
+			return localSession.getClipboard().getClipboard().getOrigin();
 		else 
 			return new Vector(loc.getBlockX(), loc.getBlockY(), loc.getBlockZ());
 	}
