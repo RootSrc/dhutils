@@ -11,6 +11,7 @@
         <version.plugin.compiler>3.3</version.plugin.compiler>
         <sonar.java.source>1.6</sonar.java.source>
         <rtr.allowExternalSnapshots>true</rtr.allowExternalSnapshots>
+        <tagNameFormat>@{project.version}</tagNameFormat>
     </properties>
     <description>Collection of useful classes I use in my plugins</description>
 
