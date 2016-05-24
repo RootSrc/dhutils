@@ -1,14 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <artifactId>dhutils-nms-v1_8_R2</artifactId>
-  <version>3.0.0-alpha.2-SNAPSHOT</version>
+  <version>3.0.0-alpha.2</version>
   <packaging>jar</packaging>
   <name>DH Utils NMS v1.8-R2</name>
 
   <parent>
     <groupId>me.desht</groupId>
     <artifactId>dhutils-parent</artifactId>
-    <version>3.0.0-alpha.1</version>
+    <version>3.0.0-alpha.2</version>
   </parent>
 
   <dependencies>
@@ -21,9 +21,13 @@
     <dependency>
       <groupId>me.desht</groupId>
       <artifactId>dhutils-nms-api</artifactId>
-      <version>3.0.0-alpha.2-SNAPSHOT</version>
+      <version>3.0.0-alpha.2</version>
       <type>jar</type>
     </dependency>
   </dependencies>
+
+  <scm>
+    <tag>3.0.0-alpha.2</tag>
+  </scm>
 </project>
 
