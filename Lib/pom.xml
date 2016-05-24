@@ -2,7 +2,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <artifactId>dhutils</artifactId>
-    <version>3.0.0-alpha.1</version>
+    <version>3.0.0-alpha.2-SNAPSHOT</version>
     <name>DH Utils</name>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -59,35 +59,35 @@
         <dependency>
             <groupId>me.desht</groupId>
             <artifactId>dhutils-nms-api</artifactId>
-            <version>3.0.0-alpha.1</version>
+            <version>3.0.0-alpha.2-SNAPSHOT</version>
             <type>jar</type>
             <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>me.desht</groupId>
             <artifactId>dhutils-nms-v1_8_R1</artifactId>
-            <version>3.0.0-alpha.1</version>
+            <version>3.0.0-alpha.2-SNAPSHOT</version>
             <type>jar</type>
             <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>me.desht</groupId>
             <artifactId>dhutils-nms-v1_8_R2</artifactId>
-            <version>3.0.0-alpha.1</version>
+            <version>3.0.0-alpha.2-SNAPSHOT</version>
             <type>jar</type>
             <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>me.desht</groupId>
             <artifactId>dhutils-nms-v1_8_R3</artifactId>
-            <version>3.0.0-alpha.1</version>
+            <version>3.0.0-alpha.2-SNAPSHOT</version>
             <type>jar</type>
             <optional>true</optional>
         </dependency>
         <dependency>
             <groupId>me.desht</groupId>
             <artifactId>dhutils-nms-fallback</artifactId>
-            <version>3.0.0-alpha.1</version>
+            <version>3.0.0-alpha.2-SNAPSHOT</version>
             <type>jar</type>
             <optional>true</optional>
         </dependency>
