@@ -34,25 +34,25 @@
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
-            <version>1.9-R0.1-SNAPSHOT</version>
+            <version>1.10-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
-            <groupId>com.sk89q</groupId>
-            <artifactId>worldedit</artifactId>
-            <version>6.0.0-SNAPSHOT</version>
+            <groupId>com.sk89q.worldedit</groupId>
+            <artifactId>worldedit-bukkit</artifactId>
+            <version>6.1.3-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>net.milkbowl.vault</groupId>
             <artifactId>VaultAPI</artifactId>
-            <version>1.5</version>
+            <version>1.6</version>
             <scope>provided</scope>
         </dependency>
        <dependency>
             <groupId>com.comphenix.protocol</groupId>
             <artifactId>ProtocolLib</artifactId>
-            <version>4.0.1</version>
+            <version>4.0.2-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
@@ -93,6 +93,13 @@
         <dependency>
             <groupId>me.desht</groupId>
             <artifactId>dhutils-nms-v1_9_R2</artifactId>
+            <version>3.0.0-alpha.4-SNAPSHOT</version>
+            <type>jar</type>
+            <optional>true</optional>
+        </dependency>
+        <dependency>
+            <groupId>me.desht</groupId>
+            <artifactId>dhutils-nms-v1_10_R1</artifactId>
             <version>3.0.0-alpha.4-SNAPSHOT</version>
             <type>jar</type>
             <optional>true</optional>
