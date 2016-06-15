@@ -24,6 +24,7 @@ import org.bukkit.metadata.MetadataValue;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.scheduler.BukkitRunnable;
 
+import com.comphenix.protocol.PacketType;
 import com.comphenix.protocol.ProtocolLibrary;
 import com.comphenix.protocol.events.PacketContainer;
 
@@ -288,7 +289,7 @@ public class ItemMessage {
 		}
 
 		private void sendItemSlotChange(Player player, int slot, ItemStack stack) {
-			PacketContainer setSlot = new PacketContainer(103);
+			PacketContainer setSlot = new PacketContainer(PacketType.Play.Server.SET_SLOT);
 			// int field 0: window id (0 = player inventory)
 			// int field 1: slot number (36 - 44 for player hotbar)
 			setSlot.getIntegers().write(0, 0).write(1, slot + 36);
