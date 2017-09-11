@@ -1,0 +1,6 @@
+jdk 7u80
+mvn -Drtr.disabled=true clean during release
+.git/config for github user rjenkinsjr (me@ronjenkins.info) during release
+git add . ; git commit during release
+git push/tag during release
+ssh agent (rjenkinsjr oauth token)
